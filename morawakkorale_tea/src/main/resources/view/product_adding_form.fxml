@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addPane" prefHeight="1011.0" prefWidth="612.0" style="-fx-background-radius: 15 15 15 15; -fx-border-color: Green; -fx-border-radius: 15 15 0 0;" stylesheets="@../cssStyle/addingFormsStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.ProductManageFormController">
+    <children>
+        <Label layoutX="34.0" layoutY="33.0" prefHeight="63.0" prefWidth="254.0" text="New Product">
+            <font>
+                <Font name="DejaVu Serif Bold" size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="38.0" layoutY="193.0" prefHeight="34.0" prefWidth="197.0" text="Product ID">
+            <font>
+                <Font name="FreeMono" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtPdtId" layoutX="295.0" layoutY="182.0" onKeyReleased="#enterProductId" prefHeight="55.0" prefWidth="261.0" promptText="Input Product Id" style="-fx-background-radius: 10 10 10 10;">
+            <font>
+                <Font name="Arial Bold" size="22.0" />
+            </font>
+        </TextField>
+        <Label layoutX="37.0" layoutY="517.0" prefHeight="34.0" prefWidth="197.0" text="Made_Date">
+            <font>
+                <Font name="FreeMono" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="39.0" layoutY="302.0" prefHeight="34.0" prefWidth="197.0" text="Stock ID">
+            <font>
+                <Font name="FreeMono" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="409.0" prefHeight="34.0" prefWidth="197.0" text="Leaf Value">
+            <font>
+                <Font name="FreeMono" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtProductLeafValue" layoutX="295.0" layoutY="396.0" onKeyReleased="#enterLeafValue" prefHeight="55.0" prefWidth="261.0" promptText="Input Value" style="-fx-background-radius: 10 10 10 10;">
+            <font>
+                <Font name="Arial Bold" size="22.0" />
+            </font>
+        </TextField>
+        <Label layoutX="36.0" layoutY="626.0" prefHeight="34.0" prefWidth="197.0" text="Type">
+            <font>
+                <Font name="FreeMono" size="22.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnPdtAdd" layoutX="368.0" layoutY="920.0" mnemonicParsing="false" onAction="#addProductToDatabase" prefHeight="54.0" prefWidth="187.0" style="-fx-background-color: #1e64cd; -fx-background-radius: 10 10 10 10;" text="Add Product" textFill="WHITE">
+            <effect>
+                <ColorAdjust />
+            </effect>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnDiscardProductAdd" layoutX="201.0" layoutY="921.0" mnemonicParsing="false" onAction="#discardProductAddForm" prefHeight="54.0" prefWidth="128.0" style="-fx-background-color: white; -fx-border-radius: 10 10 10 10; -fx-border-color: grey;" text="Discard" textFill="#030303">
+            <effect>
+                <ColorAdjust />
+            </effect>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Button>
+        <ComboBox fx:id="cmbPdtProductType" layoutX="295.0" layoutY="611.0" onAction="#enteredProductType" onShowing="#initializeTypeAddCmb" prefHeight="55.0" prefWidth="261.0" promptText="Select Type" style="-fx-background-radius: 10 10 10 10;" />
+        <DatePicker fx:id="dtpPdtMadeDate" layoutX="295.0" layoutY="505.0" prefHeight="59.0" prefWidth="261.0" promptText="Select MFD" style="-fx-background-radius: 15 15 15 15;" />
+      <Label layoutX="36.0" layoutY="729.0" prefHeight="34.0" prefWidth="197.0" text="Qty on Hand">
+         <font>
+            <Font name="FreeMono" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPdtProductQuantity" layoutX="295.0" layoutY="715.0" onAction="#enteredProductQuantity" onKeyReleased="#enterQuantity" prefHeight="55.0" prefWidth="261.0" promptText="Input Quantity" style="-fx-background-radius: 10 10 10 10;">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cmbPdtStockId" layoutX="295.0" layoutY="288.0" onAction="#enteredStockId" onShowing="#addStockIds" prefHeight="55.0" prefWidth="237.0" promptText="Select Stock Id" style="-fx-background-radius: 10 10 10 10;" />
+      <Label fx:id="lblStockValue" layoutX="490.0" layoutY="289.0" prefHeight="55.0" prefWidth="90.0" style="-fx-background-radius: 10 10 10 10;">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="830.0" prefHeight="34.0" prefWidth="197.0" text="Unit Price">
+         <font>
+            <Font name="FreeMono" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtProductUnitPrice" layoutX="295.0" layoutY="815.0" onAction="#enteredProductQuantity" onKeyReleased="#enterUnitPrice" prefHeight="55.0" prefWidth="261.0" promptText="Input Unit Price" style="-fx-background-radius: 10 10 10 10;">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>

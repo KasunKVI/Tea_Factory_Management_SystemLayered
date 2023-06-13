@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane2" prefHeight="1020.0" prefWidth="1920.0" stylesheets="@../cssStyle/accountantDashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.AccountantDashboardFormController">
+    <children>
+      <AnchorPane fx:id="bgPane" layoutX="88.0" layoutY="-1.0" prefHeight="1048.0" prefWidth="1853.0">
+         <children>
+              <ImageView fitHeight="1048.0" fitWidth="1853.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../img/Dashboard_Background.png" />
+                  </image>
+              </ImageView>
+            <Pane layoutX="413.0" layoutY="20.0" opacity="0.9" prefHeight="497.0" prefWidth="867.0" style="-fx-background-color: white; -fx-background-radius: 18 18 18 18;">
+               <children>
+                  <AreaChart fx:id="orderSummeryAreaChart" layoutX="23.0" layoutY="80.0" prefHeight="383.0" prefWidth="790.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </AreaChart>
+                  <Label layoutX="68.0" layoutY="24.0" prefHeight="40.0" prefWidth="199.0" text="Orders Summery">
+                     <font>
+                        <Font name="Abyssinica SIL" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="1350.0" layoutY="50.0" opacity="0.9" prefHeight="564.0" prefWidth="368.0" style="-fx-background-color: white; -fx-background-radius: 18 18 18 18;">
+               <children>
+                  <Label layoutX="68.0" layoutY="24.0" prefHeight="61.0" prefWidth="237.0" text="Products Summery">
+                     <font>
+                        <Font name="Abyssinica SIL" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="78.0" fitWidth="100.0" layoutX="126.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/inventory.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="78.0" fitWidth="100.0" layoutX="133.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/management.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="52.0" layoutY="207.0" prefHeight="52.0" prefWidth="260.0" text="Number Of Suppliers">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="467.0" prefHeight="52.0" prefWidth="298.0" text="Number Of Transporters">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSupplierCount" layoutX="231.0" layoutY="138.0" prefHeight="52.0" prefWidth="104.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTransportersCount" layoutX="244.0" layoutY="400.0" prefHeight="52.0" prefWidth="104.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="410.0" layoutY="550.0" opacity="0.9" prefHeight="479.0" prefWidth="803.0" style="-fx-background-color: white; -fx-background-radius: 18 18 18 18;">
+               <children>
+                  <BarChart fx:id="productSummeryBarChart" layoutX="40.0" layoutY="85.0" prefHeight="333.0" prefWidth="749.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <Label layoutX="73.0" layoutY="31.0" prefHeight="40.0" prefWidth="199.0" text="Products Summery">
+                     <font>
+                        <Font name="Abyssinica SIL" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label fx:id="lblDate" layoutX="1370.0" layoutY="750.0" prefHeight="99.0" prefWidth="330.0" style="-fx-background-color: white; -fx-background-radius: 15 15 15 15;">
+               <font>
+                  <Font name="Dyuthi Regular" size="60.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" contentDisplay="CENTER" layoutX="1401.0" layoutY="840.0" prefHeight="93.0" prefWidth="271.0" style="-fx-background-color: white; -fx-background-radius: 15 15 15 15;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Dyuthi Regular" size="60.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+        <Pane fx:id="menuBarPanel" disable="true" layoutX="-3.0" layoutY="-4.0" onMouseExited="#hideMenuBar" opacity="0.9" prefHeight="1048.0" prefWidth="400.0" style="-fx-background-radius: 0 24 24 0; -fx-background-color: white;" stylesheets="@../cssStyle/menuBarStyle.css" visible="false">
+            <children>
+                <ImageView blendMode="DARKEN" fitHeight="198.0" fitWidth="310.0" layoutX="43.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/co-op.png" />
+                    </image>
+                </ImageView>
+            <Group layoutX="1.0" layoutY="570.0" />
+            <Group layoutX="2.0" layoutY="404.0">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="88.0" layoutX="72.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/shipment.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="168.0" layoutY="110.0" prefHeight="60.0" prefWidth="207.0" text="Transporters">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSetting12" contentDisplay="RIGHT" layoutX="4.0" layoutY="77.0" mnemonicParsing="false" onAction="#loadTransporterBills" opacity="0.25" prefHeight="122.0" prefWidth="379.0" style="-fx-background-radius: 0 30 30 0;" textAlignment="RIGHT" textFill="#36e83e">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Group>
+            <Group layoutX="3.0" layoutY="291.0">
+               <children>
+                  <Label layoutX="159.0" layoutY="39.0" prefHeight="60.0" prefWidth="215.0" text="Suppliers">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="73.0" fitWidth="88.0" layoutX="69.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/green-tea (2).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnSetting13" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#loadSupplierBills" opacity="0.25" prefHeight="122.0" prefWidth="379.0" style="-fx-background-radius: 0 30 30 0;" textAlignment="RIGHT" textFill="#36e83e">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Group>
+            <Group layoutX="5.0" layoutY="673.0">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="88.0" layoutX="67.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/deal.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="175.0" layoutY="38.0" prefHeight="60.0" prefWidth="185.0" text="Orders">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSetting11" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#loadOrderAdder" opacity="0.25" prefHeight="122.0" prefWidth="379.0" style="-fx-background-radius: 0 30 30 0;" textAlignment="RIGHT" textFill="#36e83e">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Group>
+            </children>
+        </Pane>
+      <AnchorPane fx:id="menu" layoutY="-1.0" prefHeight="1048.0" prefWidth="86.0" style="-fx-background-color: black; -fx-border-color: brown; -fx-border-width: 3;" stylesheets="@../cssStyle/barStyle.css">
+         <children>
+            <ImageView fx:id="menuImg" fitHeight="79.0" fitWidth="65.0" layoutX="8.0" layoutY="14.0" onMouseClicked="#showMenuBar" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/menu.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="65.0" layoutX="8.0" layoutY="955.0" onMouseClicked="#exitSystem" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/power.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="65.0" layoutX="8.0" layoutY="119.0" onMouseClicked="#showDashboard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/green-home.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="65.0" layoutX="8.0" layoutY="835.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logout.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="65.0" layoutX="8.0" layoutY="704.0" onMouseClicked="#openSettingForm" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/settings.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Button fx:id="btnLogOut" layoutX="10.0" layoutY="835.0" mnemonicParsing="false" onAction="#logOut" opacity="0.0" prefHeight="60.0" prefWidth="62.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
