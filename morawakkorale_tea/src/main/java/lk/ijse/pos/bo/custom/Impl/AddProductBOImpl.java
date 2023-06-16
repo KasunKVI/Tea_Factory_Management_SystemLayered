@@ -139,4 +139,18 @@ public class AddProductBOImpl implements AddProductBO {
 
     }
 
+    @Override
+    public boolean deleteProduct(String id) throws SQLException, ClassNotFoundException {
+
+        return productDAO.delete(id);
+
+    }
+
+    @Override
+    public boolean deleteStock_Product(String id) throws SQLException, ClassNotFoundException {
+
+        return stock_productDAO.delete(id);
+
+    }
+
 }

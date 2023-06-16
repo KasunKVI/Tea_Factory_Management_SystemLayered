@@ -23,8 +23,6 @@ public interface TransporterBO extends SuperBO {
 
     public boolean updateTransporter(TransporterDTO dto) throws SQLException, ClassNotFoundException;
 
-    public String getTransporterPaymentId(int transporterId) throws SQLException;
-
     public boolean delete(String id) throws SQLException, ClassNotFoundException;
 
     public boolean exist(String id) throws SQLException, ClassNotFoundException;

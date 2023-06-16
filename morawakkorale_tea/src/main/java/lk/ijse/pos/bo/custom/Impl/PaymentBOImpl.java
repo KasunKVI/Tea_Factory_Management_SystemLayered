@@ -31,4 +31,11 @@ public class PaymentBOImpl implements PaymentBO {
         return paymentDAO.delete(id);
 
     }
+
+    @Override
+    public String getPaymentId(int id) throws SQLException {
+
+        return paymentDAO.getPaymentId(id);
+
+    }
 }

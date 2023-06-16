@@ -9,4 +9,6 @@ import java.sql.SQLException;
 
 public interface PaymentDAO extends CrudDAO<Payment> {
 
+    public String getPaymentId(int Id) throws SQLException;
+
 }

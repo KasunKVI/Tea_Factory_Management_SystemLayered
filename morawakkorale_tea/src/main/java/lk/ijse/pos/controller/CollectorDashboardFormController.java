@@ -26,6 +26,10 @@ import lk.ijse.pos.bo.custom.SupplierBO;
 import lk.ijse.pos.bo.custom.TransporterBO;
 import lk.ijse.pos.dto.StockDTO;
 import lk.ijse.pos.dto.Supplier_StockDTO;
+import lk.ijse.pos.utill.dashboardControll.MenuBarControl;
+import lk.ijse.pos.utill.dashboardControll.SideBarOperations;
+import lk.ijse.pos.utill.font.FontChanger;
+import lk.ijse.pos.utill.regEx.Regex;
 import lk.ijse.pos.view.tdm.SupplierTeaValuesTM;
 
 import java.io.IOException;
@@ -33,11 +37,10 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
 
 
-public class CollectorDashboardFormController implements Initializable,MenuBarControl {
+public class CollectorDashboardFormController implements Initializable, MenuBarControl {
 
     //components form collector dashboard
     @FXML
@@ -162,7 +165,7 @@ public class CollectorDashboardFormController implements Initializable,MenuBarCo
                 new Alert(Alert.AlertType.CONFIRMATION, "Stock Added").show();
                 tableSupplierTeaValues.getItems().clear();
                 discardOrClearStockAddValues(actionEvent);
-
+                generateNextStockId();
             }
 
         }

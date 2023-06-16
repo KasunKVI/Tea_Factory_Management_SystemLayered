@@ -17,6 +17,7 @@ import lk.ijse.pos.bo.custom.AddProductBO;
 import lk.ijse.pos.dto.ProductDTO;
 import lk.ijse.pos.dto.Stock_ProductDTO;
 import lk.ijse.pos.view.tdm.ProductTM;
+import lk.ijse.pos.view.tdm.TransporterTM;
 
 import java.io.IOException;
 import java.net.URL;
@@ -130,6 +131,22 @@ public class ViewProductFormController implements Initializable {
         clmProductLeafValue.setCellValueFactory(new PropertyValueFactory<>("Leaf_value"));
         clmProductType.setCellValueFactory(new PropertyValueFactory<>("Type"));
         clmProductQuantity.setCellValueFactory(new PropertyValueFactory<>("Quantity"));
+
+    }
+
+    public void deleteProductFromDatabase(ActionEvent actionEvent) {
+
+        int selectedID=allProductDetails.getSelectionModel().getSelectedIndex();
+
+        ProductTM productTM = allProductDetails.getSelectionModel().getSelectedItem();
+
+        String pdtId = productTM.getId();
+
+        allProductDetails.getItems().remove(selectedID);
+
+
+           // addProductBO.deleteStock_Product(pdtId);
+            //addProductBO.deleteProduct(pdtId);
 
     }
 }

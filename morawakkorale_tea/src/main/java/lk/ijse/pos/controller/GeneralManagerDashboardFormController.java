@@ -17,6 +17,8 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import lk.ijse.pos.bo.BOFactory;
 import lk.ijse.pos.bo.custom.PlaceOrderBO;
+import lk.ijse.pos.utill.dashboardControll.MenuBarControl;
+import lk.ijse.pos.utill.dashboardControll.SideBarOperations;
 import lombok.SneakyThrows;
 import java.io.IOException;
 import java.net.URL;
@@ -24,7 +26,7 @@ import java.sql.SQLException;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-public class GeneralManagerDashboardFormController implements Initializable ,MenuBarControl{
+public class GeneralManagerDashboardFormController implements Initializable , MenuBarControl {
 
     //components from general manager dashboard
     @FXML

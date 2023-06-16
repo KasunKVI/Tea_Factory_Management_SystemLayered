@@ -14,6 +14,8 @@ import lk.ijse.pos.bo.custom.CustomerBO;
 import lk.ijse.pos.bo.custom.PaymentBO;
 import lk.ijse.pos.bo.custom.PlaceOrderBO;
 import lk.ijse.pos.dto.*;
+import lk.ijse.pos.utill.font.FontChanger;
+import lk.ijse.pos.utill.regEx.Regex;
 import lk.ijse.pos.view.tdm.PlaceOrderTM;
 
 import net.sf.jasperreports.engine.*;
@@ -333,6 +335,8 @@ public class PlaceOrderFormController implements Initializable {
 
             throwable.printStackTrace();
 
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
         }
 
     }

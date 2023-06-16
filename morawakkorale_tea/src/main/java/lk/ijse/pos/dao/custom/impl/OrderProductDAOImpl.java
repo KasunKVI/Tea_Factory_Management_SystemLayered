@@ -13,7 +13,7 @@ import java.util.List;
 public class OrderProductDAOImpl implements OrderProductDAO {
     @Override
     public ArrayList<Order_Product> getAll() throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
@@ -26,42 +26,42 @@ public class OrderProductDAOImpl implements OrderProductDAO {
 
     @Override
     public boolean update(Order_Product entity) throws SQLException, ClassNotFoundException {
-        return false;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public boolean exist(String id) throws SQLException, ClassNotFoundException {
-        return false;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public int getCount(String type) throws SQLException, ClassNotFoundException {
-        return 0;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public String generateNewId() throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
-        return false;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public Order_Product search(String id) throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public int getCount() throws SQLException, ClassNotFoundException {
-        return 0;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public ArrayList<String> getAllIds() throws SQLException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override

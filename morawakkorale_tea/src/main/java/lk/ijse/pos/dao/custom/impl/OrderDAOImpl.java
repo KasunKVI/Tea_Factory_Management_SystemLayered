@@ -49,17 +49,17 @@ public class OrderDAOImpl implements OrderDAO {
 
     @Override
     public boolean update(Orders entity) throws SQLException, ClassNotFoundException {
-        return false;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public boolean exist(String id) throws SQLException, ClassNotFoundException {
-        return false;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public int getCount(String type) throws SQLException, ClassNotFoundException {
-        return 0;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
@@ -80,22 +80,22 @@ public class OrderDAOImpl implements OrderDAO {
 
     @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
-        return false;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public Orders search(String id) throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public int getCount() throws SQLException, ClassNotFoundException {
-        return 0;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public ArrayList<String> getAllIds() throws SQLException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override

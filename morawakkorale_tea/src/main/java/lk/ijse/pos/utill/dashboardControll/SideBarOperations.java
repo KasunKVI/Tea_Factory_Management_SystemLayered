@@ -1,4 +1,4 @@
-package lk.ijse.pos.controller;
+package lk.ijse.pos.utill.dashboardControll;
 
 import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;

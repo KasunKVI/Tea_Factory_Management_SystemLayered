@@ -15,6 +15,8 @@ import lk.ijse.pos.bo.custom.SupplierBO;
 import lk.ijse.pos.dto.PaymentDTO;
 import lk.ijse.pos.dto.SupplierDTO;
 import lk.ijse.pos.dto.Supplier_BillDTO;
+import lk.ijse.pos.utill.font.FontChanger;
+import lk.ijse.pos.utill.regEx.Regex;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.view.JasperViewer;

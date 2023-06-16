@@ -66,12 +66,12 @@ public class TransporterDAOImpl implements TransporterDAO {
 
     @Override
     public int getCount(String type) throws SQLException, ClassNotFoundException {
-        return 0;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public String generateNewId() throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
@@ -147,18 +147,4 @@ public class TransporterDAOImpl implements TransporterDAO {
 
     }
 
-    @Override
-    public String getTransporterPaymentId(int transporterId) throws SQLException {
-
-        String sql = "SELECT pay_id FROM Transporter WHERE tp_id = ?";
-        ResultSet resultSet = SQLUtil.execute(sql,transporterId);
-
-        String pay_id=null;
-
-        while (resultSet.next()){
-            pay_id=resultSet.getString(1);
-        }
-        return pay_id;
-
-    }
 }

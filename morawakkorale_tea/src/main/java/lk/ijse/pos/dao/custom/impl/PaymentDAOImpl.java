@@ -14,7 +14,7 @@ public class PaymentDAOImpl implements PaymentDAO {
 
     @Override
     public ArrayList<Payment> getAll() throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
@@ -27,22 +27,22 @@ public class PaymentDAOImpl implements PaymentDAO {
 
     @Override
     public boolean update(Payment entity) throws SQLException, ClassNotFoundException {
-        return false;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public boolean exist(String id) throws SQLException, ClassNotFoundException {
-        return false;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public int getCount(String type) throws SQLException, ClassNotFoundException {
-        return 0;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public String generateNewId() throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
@@ -55,7 +55,7 @@ public class PaymentDAOImpl implements PaymentDAO {
 
     @Override
     public Payment search(String id) throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
@@ -75,6 +75,21 @@ public class PaymentDAOImpl implements PaymentDAO {
 
     @Override
     public ArrayList<String> getAllIds() throws SQLException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
+    }
+
+    @Override
+    public String getPaymentId(int Id) throws SQLException {
+
+        String sql = "SELECT pay_id FROM Payment WHERE trp_id = ?";
+        ResultSet resultSet = SQLUtil.execute(sql,Id);
+
+        String pay_id=null;
+
+        while (resultSet.next()){
+            pay_id=resultSet.getString(1);
+        }
+        return pay_id;
+
     }
 }

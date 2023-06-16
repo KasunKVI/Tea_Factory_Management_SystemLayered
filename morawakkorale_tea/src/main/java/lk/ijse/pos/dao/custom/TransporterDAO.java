@@ -9,6 +9,6 @@ public interface TransporterDAO extends CrudDAO<Transporter> {
 
     public String getRoute(Integer id) throws SQLException;
 
-    public String getTransporterPaymentId(int transporterId) throws SQLException;
+
 
 }

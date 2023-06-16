@@ -14,7 +14,7 @@ import java.util.List;
 public class LeafStockDAOImpl implements LeafStockDAO {
     @Override
     public ArrayList<Supplier_Stock> getAll() throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
@@ -27,22 +27,22 @@ public class LeafStockDAOImpl implements LeafStockDAO {
 
     @Override
     public boolean update(Supplier_Stock entity) throws SQLException, ClassNotFoundException {
-        return false;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public boolean exist(String id) throws SQLException, ClassNotFoundException {
-        return false;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public int getCount(String type) throws SQLException, ClassNotFoundException {
-        return 0;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public String generateNewId() throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
@@ -55,17 +55,17 @@ public class LeafStockDAOImpl implements LeafStockDAO {
 
     @Override
     public Supplier_Stock search(String id) throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public int getCount() throws SQLException, ClassNotFoundException {
-        return 0;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public ArrayList<String> getAllIds() throws SQLException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override

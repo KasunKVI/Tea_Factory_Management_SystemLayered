@@ -22,6 +22,8 @@ import lk.ijse.pos.bo.custom.AddProductBO;
 import lk.ijse.pos.bo.custom.PlaceOrderBO;
 import lk.ijse.pos.bo.custom.SupplierBO;
 import lk.ijse.pos.bo.custom.TransporterBO;
+import lk.ijse.pos.utill.dashboardControll.MenuBarControl;
+import lk.ijse.pos.utill.dashboardControll.SideBarOperations;
 import lombok.SneakyThrows;
 
 import java.io.IOException;
@@ -34,7 +36,7 @@ import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.scene.control.Label;
 
-public class AccountantDashboardFormController implements Initializable,MenuBarControl {
+public class AccountantDashboardFormController implements Initializable, MenuBarControl {
 
 
 

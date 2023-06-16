@@ -42,29 +42,32 @@ public class Stock_ProductDAOImpl implements Stock_ProductDAO {
 
     @Override
     public boolean update(Stock_Product entity) throws SQLException, ClassNotFoundException {
-        return false;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
 
 
     @Override
     public boolean exist(String id) throws SQLException, ClassNotFoundException {
-        return false;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public int getCount(String type) throws SQLException, ClassNotFoundException {
-        return 0;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public String generateNewId() throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
-        return false;
+
+        String sql = "DELETE FROM Stock_Product WHERE id_product = ?";
+        return SQLUtil.execute(sql,id);
+
     }
 
     @Override
@@ -87,11 +90,11 @@ public class Stock_ProductDAOImpl implements Stock_ProductDAO {
 
     @Override
     public int getCount() throws SQLException, ClassNotFoundException {
-        return 0;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public ArrayList<String> getAllIds() throws SQLException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 }

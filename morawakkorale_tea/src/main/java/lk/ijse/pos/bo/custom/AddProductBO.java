@@ -25,4 +25,8 @@ public interface AddProductBO extends SuperBO {
 
     public boolean exist(String id) throws SQLException, ClassNotFoundException;
 
+    public boolean deleteProduct(String id) throws SQLException, ClassNotFoundException;
+
+    public boolean deleteStock_Product(String id) throws SQLException, ClassNotFoundException;
+
 }

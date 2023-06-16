@@ -137,16 +137,17 @@ public class ViewTransporterFormController implements Initializable {
 
         try {
 
-            String pay_id = transporterBO.getTransporterPaymentId(transporterId);
-            leafStockBO.deleteTransporterDetails(transporterId);
-            transporterBO.delete(String.valueOf(transporterId));
+            String pay_id = paymentBO.getPaymentId(transporterId);
+            //paymentBO.deletePayment(pay_id);
+
 
             if(pay_id!=null){
 
                 //PaymentModel.deleteTransporterPaymentFromDatabase(pay_id);
                 paymentBO.deletePayment(pay_id);
             }
-
+            leafStockBO.deleteTransporterDetails(transporterId);
+            transporterBO.delete(String.valueOf(transporterId));
         } catch (SQLException throwable) {
             throwable.printStackTrace();
         } catch (ClassNotFoundException e) {

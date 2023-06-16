@@ -72,13 +72,6 @@ public class TransporterBOImpl implements TransporterBO {
     }
 
     @Override
-    public String getTransporterPaymentId(int transporterId) throws SQLException {
-
-        return transporterDAO.getTransporterPaymentId(transporterId);
-
-    }
-
-    @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
 
         return transporterDAO.delete(id);

@@ -20,6 +20,8 @@ import lk.ijse.pos.bo.custom.AddProductBO;
 import lk.ijse.pos.bo.custom.CustomerBO;
 import lk.ijse.pos.bo.custom.SupplierBO;
 import lk.ijse.pos.bo.custom.TransporterBO;
+import lk.ijse.pos.utill.dashboardControll.MenuBarControl;
+import lk.ijse.pos.utill.dashboardControll.SideBarOperations;
 import lombok.SneakyThrows;
 import java.io.IOException;
 import java.net.URL;
@@ -30,7 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class ManagerDashboardFormController implements Initializable,MenuBarControl {
+public class ManagerDashboardFormController implements Initializable, MenuBarControl {
 
     //components from manager dashboard
     @FXML

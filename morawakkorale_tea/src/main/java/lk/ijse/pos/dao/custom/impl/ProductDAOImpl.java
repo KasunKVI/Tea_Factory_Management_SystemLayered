@@ -82,12 +82,15 @@ public class ProductDAOImpl implements ProductDAO {
 
     @Override
     public String generateNewId() throws SQLException, ClassNotFoundException {
-        return null;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
-        return false;
+
+        String sql = "DELETE FROM Product WHERE product_id = ?";
+        return SQLUtil.execute(sql,id);
+
     }
 
     @Override
@@ -112,7 +115,7 @@ public class ProductDAOImpl implements ProductDAO {
 
     @Override
     public int getCount() throws SQLException, ClassNotFoundException {
-        return 0;
+        throw new UnsupportedOperationException("This Feature is not implemented yet");
     }
 
     @Override
