@@ -116,4 +116,9 @@ public class CustomerDAOImpl implements CustomerDAO {
         return resultSet.next();
 
     }
+
+    @Override
+    public int getCount(String type) throws SQLException, ClassNotFoundException {
+        return 0;
+    }
 }

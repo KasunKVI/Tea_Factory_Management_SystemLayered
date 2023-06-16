@@ -66,6 +66,21 @@ public class ProductDAOImpl implements ProductDAO {
     }
 
     @Override
+    public int getCount(String type) throws SQLException, ClassNotFoundException {
+
+        String sql = "SELECT product_id FROM Product WHERE type = ?";
+        ResultSet resultSet = SQLUtil.execute(sql,type);
+
+        int count=0;
+
+        while (resultSet.next()){
+            count++;
+        }
+        return count;
+
+    }
+
+    @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
         return false;
     }
@@ -107,21 +122,6 @@ public class ProductDAOImpl implements ProductDAO {
             ids.add(resultSet.getString(1));
         }
         return ids;
-
-    }
-
-    @Override
-    public int getProductCount(String product) throws SQLException, ClassNotFoundException {
-
-        String sql = "SELECT product_id FROM Product WHERE type = ?";
-        ResultSet resultSet = SQLUtil.execute(sql,product);
-
-        int count=0;
-
-        while (resultSet.next()){
-            count++;
-        }
-        return count;
 
     }
 

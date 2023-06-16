@@ -7,8 +7,6 @@ import java.sql.SQLException;
 
 public interface SupplierDAO extends CrudDAO<Supplier> {
 
-    public int getNewSupplierCount(String year) throws SQLException, ClassNotFoundException;
-
     public  int getNewSupplierCount(int year, int month) throws SQLException;
 
 }

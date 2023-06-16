@@ -50,6 +50,11 @@ public class PaymentDAOImpl implements PaymentDAO {
     }
 
     @Override
+    public int getCount(String type) throws SQLException, ClassNotFoundException {
+        return 0;
+    }
+
+    @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
 
         String sql = "DELETE FROM Payment WHERE pay_id = ?";

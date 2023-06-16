@@ -59,7 +59,7 @@ public class SupplierBOImpl implements SupplierBO {
     @Override
     public int getNewSupplierCount(String year) throws SQLException, ClassNotFoundException {
 
-        return supplierDAO.getNewSupplierCount(year);
+        return supplierDAO.getCount(year);
 
     }
 

@@ -129,7 +129,7 @@ public class AddProductBOImpl implements AddProductBO {
     @Override
     public int getProductCount(String product) throws SQLException, ClassNotFoundException {
 
-        return productDAO.getProductCount(product);
+        return productDAO.getCount(product);
     }
 
     @Override

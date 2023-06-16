@@ -6,7 +6,6 @@ import lk.ijse.pos.dao.custom.OrderDAO;
 import lk.ijse.pos.dao.custom.OrderProductDAO;
 import lk.ijse.pos.dto.Order_PaymentDTO;
 import lk.ijse.pos.entity.Orders;
-import lk.ijse.pos.model.Order_ProductModel;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -56,6 +55,11 @@ public class OrderDAOImpl implements OrderDAO {
     @Override
     public boolean exist(String id) throws SQLException, ClassNotFoundException {
         return false;
+    }
+
+    @Override
+    public int getCount(String type) throws SQLException, ClassNotFoundException {
+        return 0;
     }
 
     @Override

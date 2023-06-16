@@ -67,6 +67,22 @@ public class SupplierDAOImpl implements SupplierDAO {
     }
 
     @Override
+    public int getCount(String type) throws SQLException, ClassNotFoundException {
+
+        int Year= Integer.parseInt(type);
+        String sql = "SELECT sup_id FROM Supplier WHERE YEAR(reg_date) = ?";
+        ResultSet resultSet = SQLUtil.execute(sql,Year);
+
+        int count=0;
+
+        while (resultSet.next()){
+            count++;
+        }
+        return count;
+
+    }
+
+    @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
 
         String sql = "DELETE FROM Supplier WHERE sup_id = ?";
@@ -121,22 +137,6 @@ public class SupplierDAOImpl implements SupplierDAO {
             ids.add(String.valueOf(resultSet.getInt(1)));
         }
         return ids;
-
-    }
-
-    @Override
-    public int getNewSupplierCount(String year) throws SQLException, ClassNotFoundException {
-
-        int Year= Integer.parseInt(year);
-        String sql = "SELECT sup_id FROM Supplier WHERE YEAR(reg_date) = ?";
-        ResultSet resultSet = SQLUtil.execute(sql,Year);
-
-        int count=0;
-
-        while (resultSet.next()){
-            count++;
-        }
-        return count;
 
     }
 

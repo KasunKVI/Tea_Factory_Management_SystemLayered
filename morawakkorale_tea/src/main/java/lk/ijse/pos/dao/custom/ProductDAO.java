@@ -10,7 +10,6 @@ import java.util.ArrayList;
 
 public interface ProductDAO extends CrudDAO<Product> {
 
-    public int getProductCount(String product) throws SQLException, ClassNotFoundException ;
 
     public boolean updateOrderProduct(ArrayList<Order_Product> orderProducts) throws SQLException,ClassNotFoundException;
 
