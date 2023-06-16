@@ -18,9 +18,6 @@ import lk.ijse.pos.bo.custom.PaymentBO;
 import lk.ijse.pos.bo.custom.TransporterBO;
 import lk.ijse.pos.dto.TransporterDTO;
 import lk.ijse.pos.view.tdm.TransporterTM;
-import lk.ijse.pos.model.PaymentModel;
-import lk.ijse.pos.model.StockModel;
-import lk.ijse.pos.model.TransporterModel;
 
 import java.io.IOException;
 import java.net.URL;

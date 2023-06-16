@@ -22,10 +22,6 @@ import lk.ijse.pos.bo.custom.AddProductBO;
 import lk.ijse.pos.bo.custom.PlaceOrderBO;
 import lk.ijse.pos.bo.custom.SupplierBO;
 import lk.ijse.pos.bo.custom.TransporterBO;
-import lk.ijse.pos.model.OrderModel;
-import lk.ijse.pos.model.ProductModel;
-import lk.ijse.pos.model.SupplierModel;
-import lk.ijse.pos.model.TransporterModel;
 import lombok.SneakyThrows;
 
 import java.io.IOException;

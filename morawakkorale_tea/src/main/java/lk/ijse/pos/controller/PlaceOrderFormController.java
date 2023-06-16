@@ -15,7 +15,7 @@ import lk.ijse.pos.bo.custom.PaymentBO;
 import lk.ijse.pos.bo.custom.PlaceOrderBO;
 import lk.ijse.pos.dto.*;
 import lk.ijse.pos.view.tdm.PlaceOrderTM;
-import lk.ijse.pos.model.*;
+
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.view.JasperViewer;

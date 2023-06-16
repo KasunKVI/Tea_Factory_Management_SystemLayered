@@ -11,8 +11,6 @@ import javafx.stage.Stage;
 import lk.ijse.pos.bo.BOFactory;
 import lk.ijse.pos.bo.custom.LogInBO;
 import lk.ijse.pos.dto.LogInDTO;
-import lk.ijse.pos.model.LogInModel;
-
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Optional;

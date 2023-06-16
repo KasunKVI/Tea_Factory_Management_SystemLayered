@@ -14,8 +14,6 @@ import lk.ijse.pos.bo.custom.AddProductBO;
 import lk.ijse.pos.bo.custom.LeafStockBO;
 import lk.ijse.pos.dto.ProductDTO;
 import lk.ijse.pos.dto.Stock_ProductDTO;
-import lk.ijse.pos.model.*;
-
 import java.net.URL;
 import java.sql.SQLException;
 import java.time.LocalDate;

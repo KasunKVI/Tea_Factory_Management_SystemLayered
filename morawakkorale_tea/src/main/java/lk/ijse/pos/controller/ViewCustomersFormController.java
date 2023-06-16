@@ -16,7 +16,6 @@ import lk.ijse.pos.bo.BOFactory;
 import lk.ijse.pos.bo.custom.CustomerBO;
 import lk.ijse.pos.dto.CustomerDTO;
 import lk.ijse.pos.view.tdm.CustomerTM;
-import lk.ijse.pos.model.CustomerModel;
 
 import java.io.IOException;
 import java.net.URL;

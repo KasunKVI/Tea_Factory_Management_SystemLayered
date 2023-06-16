@@ -9,7 +9,6 @@ import javafx.stage.Stage;
 import lk.ijse.pos.bo.BOFactory;
 import lk.ijse.pos.bo.custom.SupplierBO;
 import lk.ijse.pos.dto.SupplierDTO;
-import lk.ijse.pos.model.SupplierModel;
 
 import java.io.IOException;
 import java.net.URL;

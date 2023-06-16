@@ -13,7 +13,6 @@ import lk.ijse.pos.bo.custom.LeafStockBO;
 import lk.ijse.pos.bo.custom.PaymentBO;
 import lk.ijse.pos.bo.custom.TransporterBO;
 import lk.ijse.pos.dto.*;
-import lk.ijse.pos.model.*;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.view.JasperViewer;

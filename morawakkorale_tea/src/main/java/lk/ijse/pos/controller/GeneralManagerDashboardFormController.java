@@ -17,9 +17,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import lk.ijse.pos.bo.BOFactory;
 import lk.ijse.pos.bo.custom.PlaceOrderBO;
-import lk.ijse.pos.model.OrderModel;
 import lombok.SneakyThrows;
-
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;

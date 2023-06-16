@@ -27,10 +27,6 @@ import lk.ijse.pos.bo.custom.TransporterBO;
 import lk.ijse.pos.dto.StockDTO;
 import lk.ijse.pos.dto.Supplier_StockDTO;
 import lk.ijse.pos.view.tdm.SupplierTeaValuesTM;
-import lk.ijse.pos.model.AddStockModel;
-import lk.ijse.pos.model.StockModel;
-import lk.ijse.pos.model.SupplierModel;
-import lk.ijse.pos.model.TransporterModel;
 
 import java.io.IOException;
 import java.net.URL;

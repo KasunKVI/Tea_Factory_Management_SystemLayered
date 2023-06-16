@@ -17,8 +17,6 @@ import lk.ijse.pos.bo.custom.LeafStockBO;
 import lk.ijse.pos.bo.custom.SupplierBO;
 import lk.ijse.pos.dto.SupplierDTO;
 import lk.ijse.pos.view.tdm.SupplierTM;
-import lk.ijse.pos.model.SupplierModel;
-import lk.ijse.pos.model.Supplier_StockModel;
 import lombok.SneakyThrows;
 
 import java.io.IOException;

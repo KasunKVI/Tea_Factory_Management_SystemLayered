@@ -12,9 +12,6 @@ import javafx.stage.Stage;
 import lk.ijse.pos.bo.BOFactory;
 import lk.ijse.pos.bo.custom.CustomerBO;
 import lk.ijse.pos.dto.CustomerDTO;
-import lk.ijse.pos.model.CustomerModel;
-import lk.ijse.pos.model.EmployeeModel;
-
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;

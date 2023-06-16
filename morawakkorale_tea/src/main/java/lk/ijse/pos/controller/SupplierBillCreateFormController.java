@@ -15,14 +15,10 @@ import lk.ijse.pos.bo.custom.SupplierBO;
 import lk.ijse.pos.dto.PaymentDTO;
 import lk.ijse.pos.dto.SupplierDTO;
 import lk.ijse.pos.dto.Supplier_BillDTO;
-import lk.ijse.pos.model.PaymentModel;
-import lk.ijse.pos.model.SupplierModel;
-import lk.ijse.pos.model.Supplier_StockModel;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.view.JasperViewer;
 import org.springframework.util.ResourceUtils;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URL;

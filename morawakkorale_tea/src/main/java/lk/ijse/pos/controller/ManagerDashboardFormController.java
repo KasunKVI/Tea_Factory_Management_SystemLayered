@@ -20,9 +20,7 @@ import lk.ijse.pos.bo.custom.AddProductBO;
 import lk.ijse.pos.bo.custom.CustomerBO;
 import lk.ijse.pos.bo.custom.SupplierBO;
 import lk.ijse.pos.bo.custom.TransporterBO;
-import lk.ijse.pos.model.*;
 import lombok.SneakyThrows;
-
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
