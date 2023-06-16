@@ -81,6 +81,11 @@ public class ProductDAOImpl implements ProductDAO {
     }
 
     @Override
+    public String generateNewId() throws SQLException, ClassNotFoundException {
+        return null;
+    }
+
+    @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
         return false;
     }

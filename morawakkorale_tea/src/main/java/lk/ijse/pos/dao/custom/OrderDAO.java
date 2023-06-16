@@ -11,6 +11,5 @@ public interface OrderDAO extends CrudDAO<Orders> {
 
     public double getSales(String type) throws SQLException;
 
-    public String generateOrderId() throws SQLException;
 
 }

@@ -41,6 +41,11 @@ public class LeafStockDAOImpl implements LeafStockDAO {
     }
 
     @Override
+    public String generateNewId() throws SQLException, ClassNotFoundException {
+        return null;
+    }
+
+    @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
 
         String sql = "DELETE FROM Supplier_Stock WHERE sup_id = ?";

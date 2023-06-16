@@ -116,9 +116,9 @@ public class PlaceOrderBOImpl implements PlaceOrderBO {
     }
 
     @Override
-    public String generateOrderId() throws SQLException {
+    public String generateOrderId() throws SQLException, ClassNotFoundException {
 
-        return orderDAO.generateOrderId();
+        return orderDAO.generateNewId();
 
     }
 }

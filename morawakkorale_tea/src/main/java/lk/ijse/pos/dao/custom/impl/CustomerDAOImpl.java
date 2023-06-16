@@ -121,4 +121,9 @@ public class CustomerDAOImpl implements CustomerDAO {
     public int getCount(String type) throws SQLException, ClassNotFoundException {
         return 0;
     }
+
+    @Override
+    public String generateNewId() throws SQLException, ClassNotFoundException {
+        return null;
+    }
 }

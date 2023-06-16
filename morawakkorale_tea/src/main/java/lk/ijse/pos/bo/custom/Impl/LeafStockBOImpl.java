@@ -87,7 +87,7 @@ public class LeafStockBOImpl implements LeafStockBO {
     @Override
     public String generateStockId() throws SQLException, ClassNotFoundException {
 
-        return stockDAO.generateNewID();
+        return stockDAO.generateNewId();
 
     }
 

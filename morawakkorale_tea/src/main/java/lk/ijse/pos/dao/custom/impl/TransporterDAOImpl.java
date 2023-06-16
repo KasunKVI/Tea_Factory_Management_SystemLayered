@@ -70,6 +70,11 @@ public class TransporterDAOImpl implements TransporterDAO {
     }
 
     @Override
+    public String generateNewId() throws SQLException, ClassNotFoundException {
+        return null;
+    }
+
+    @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
 
         String sql = "DELETE FROM Transporter WHERE tp_id = ?";

@@ -41,6 +41,22 @@ public class StockDAOImpl implements StockDAO {
     }
 
     @Override
+    public String generateNewId() throws SQLException, ClassNotFoundException {
+
+
+        String sql = "SELECT stock_id FROM Stock ORDER BY stock_id DESC LIMIT 1";
+        ResultSet resultSet = SQLUtil.execute(sql);
+        if(resultSet.next()) {
+
+            return splitOrderId(resultSet.getString(1));
+
+        }
+
+        return splitOrderId(null);
+
+    }
+
+    @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
         return false;
     }
@@ -82,20 +98,6 @@ public class StockDAOImpl implements StockDAO {
             return false;
         }
 
-    }
-
-    @Override
-    public String generateNewID() throws SQLException, ClassNotFoundException {
-
-        String sql = "SELECT stock_id FROM Stock ORDER BY stock_id DESC LIMIT 1";
-        ResultSet resultSet = SQLUtil.execute(sql);
-        if(resultSet.next()) {
-
-            return splitOrderId(resultSet.getString(1));
-
-        }
-
-        return splitOrderId(null);
     }
 
     @Override

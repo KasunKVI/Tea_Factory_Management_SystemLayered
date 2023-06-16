@@ -9,8 +9,6 @@ public interface StockDAO extends CrudDAO<Stock> {
 
     public boolean isExist(int date, int month) throws SQLException;
 
-    public String generateNewID() throws SQLException, ClassNotFoundException;
-
     public String getStockValue(String stock_id) throws SQLException;
 
     public int getTransporterValues(int id, int month) throws SQLException;

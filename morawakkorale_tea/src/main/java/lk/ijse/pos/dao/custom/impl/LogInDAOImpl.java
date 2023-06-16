@@ -40,6 +40,11 @@ public class LogInDAOImpl implements LogInDAO {
     }
 
     @Override
+    public String generateNewId() throws SQLException, ClassNotFoundException {
+        return null;
+    }
+
+    @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
         return false;
     }

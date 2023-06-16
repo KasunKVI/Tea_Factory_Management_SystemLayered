@@ -14,7 +14,7 @@ public class PaymentBOImpl implements PaymentBO {
     @Override
     public int getPaymentId() throws SQLException, ClassNotFoundException {
 
-        return paymentDAO.getPaymentId();
+        return paymentDAO.getCount();
 
     }
 

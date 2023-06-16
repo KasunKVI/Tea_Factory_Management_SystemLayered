@@ -18,5 +18,5 @@ public interface PlaceOrderBO extends SuperBO {
 
     public ArrayList<String> getAllIds()throws SQLException;
 
-    public String generateOrderId() throws SQLException;
+    public String generateOrderId() throws SQLException, ClassNotFoundException;
 }

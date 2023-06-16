@@ -83,6 +83,11 @@ public class SupplierDAOImpl implements SupplierDAO {
     }
 
     @Override
+    public String generateNewId() throws SQLException, ClassNotFoundException {
+        return null;
+    }
+
+    @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
 
         String sql = "DELETE FROM Supplier WHERE sup_id = ?";

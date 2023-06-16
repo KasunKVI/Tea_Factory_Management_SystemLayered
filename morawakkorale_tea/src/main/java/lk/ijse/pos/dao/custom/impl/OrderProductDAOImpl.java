@@ -40,6 +40,11 @@ public class OrderProductDAOImpl implements OrderProductDAO {
     }
 
     @Override
+    public String generateNewId() throws SQLException, ClassNotFoundException {
+        return null;
+    }
+
+    @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
         return false;
     }

@@ -63,6 +63,22 @@ public class OrderDAOImpl implements OrderDAO {
     }
 
     @Override
+    public String generateNewId() throws SQLException, ClassNotFoundException {
+
+        String sql = "SELECT order_id FROM Orders ORDER BY order_id DESC LIMIT 1";
+        ResultSet resultSet = SQLUtil.execute(sql);
+
+        if (resultSet.next()) {
+
+            return splitOrderId(resultSet.getString(1));
+
+        }
+
+        return splitOrderId(null);
+
+    }
+
+    @Override
     public boolean delete(String id) throws SQLException, ClassNotFoundException {
         return false;
     }
@@ -127,21 +143,6 @@ public class OrderDAOImpl implements OrderDAO {
 
         return sale;
 
-    }
-
-    @Override
-    public String generateOrderId() throws SQLException {
-
-        String sql = "SELECT order_id FROM Orders ORDER BY order_id DESC LIMIT 1";
-        ResultSet resultSet = SQLUtil.execute(sql);
-
-        if (resultSet.next()) {
-
-            return splitOrderId(resultSet.getString(1));
-
-        }
-
-        return splitOrderId(null);
     }
 
     public static String splitOrderId(String currentOrderId) {

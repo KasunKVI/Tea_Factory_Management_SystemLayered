@@ -9,7 +9,4 @@ import java.sql.SQLException;
 
 public interface PaymentDAO extends CrudDAO<Payment> {
 
-    public int getPaymentId() throws SQLException,ClassNotFoundException;
-
-
 }
